@@ -1,24 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfoilo</title>
-  <link rel="stylesheet" href="./index.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SHAIK MOHAMMED AKRAM ALI — Portfolio</title>
+  <meta name="description" content="Portfolio of SHAIK MOHAMMED AKRAM ALI — 2nd year Computer Science student at KL University, intern experience at ThoughtWorks Hyderabad." />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <p class="logo">SHAIK AKRAM</p>
-    <nav class="headerNavigations">
-      <a href="#">About Me</a>
-      <a href="#">Skills</a>
-      <a href="#">Education</a>
-      <a href="#">Experience</a>
-      <a href="#">Projects</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>SHAIK MOHAMMED AKRAM ALI</h1>
+        <p class="tagline">2nd year Computer Science student • Intern @ ThoughtWorks Hyderabad</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌗</button>
+      </nav>
+    </div>
   </header>
-  <main>
 
+  <main>
+    <section id="hero" class="hero container">
+      <div class="hero-left">
+        <h2>Hello — I'm Shaik Mohammed Akram Ali</h2>
+        <p class="lead">A software engineering student at KL University with internship experience at ThoughtWorks Hyderabad. I enjoy building scalable web apps and contributing to impactful projects.</p>
+        <p>
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn ghost" href="#projects">View projects</a>
+        </p>
+      </div>
+      <div class="hero-right">
+        <!-- Avatar fallback (profile photo removed) -->
+        <div class="avatar">SHAIK</div>
+      </div>
+    </section>
+
+    <section id="about" class="container card">
+      <h3>About</h3>
+      <p>I am a Computer Science student at KL University, focused on software development. During my internship at ThoughtWorks Hyderabad, I gained practical exposure to frontend technologies.</p>
+    </section>
+
+    <section id="experience" class="container">
+      <h3>Experience</h3>
+
+      <div class="exp-list">
+        <article class="exp-item card">
+          <h4>Intern — ThoughtWorks Hyderabad</h4>
+          <p class="muted">Internship — ThoughtWorks Hyderabad</p>
+          <p>Internship focused on frontend technologies; collaborated with the team and helped build a Medium-clone.</p>
+        </article>
+
+        <article class="exp-item card">
+          <h4>Student — KL University</h4>
+          <p class="muted">2nd year — Computer Science (B.Tech)</p>
+          <p>Major: Computer Science. Coursework includes data structures, algorithms, databases, and web development. (Add your expected graduation year, GPA if you'd like.)</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="container card">
+      <h3>Projects</h3>
+      <p>Selected projects — links and details can be added or replaced with your repositories and demos.</p>
+      <div class="projects-grid">
+        <article class="project">
+          <h4>Medium-clone — Frontend</h4>
+          <p>Built a Medium-like blogging interface with article listing, reading pages, and a simple editor. Tech: React.js, HTML, CSS, Node.js (API integration). <a href="https://github.com/SkAkramali" target="_blank" rel="noopener">GitHub</a></p>
+        </article>
+
+        <article class="project">
+          <h4>Career Recommendation Engine</h4>
+          <p>Developed a simple career recommendation engine that suggests career paths based on user interests and skills. Tech: JavaScript/Node.js, simple rule-based logic, and a basic UI. <a href="https://github.com/SkAkramali" target="_blank" rel="noopener">GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container card">
+      <h3>Skills</h3>
+      <p>Tech stack and languages I work with:</p>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>React.js</li>
+        <li>MySQL</li>
+        <li>C</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container card">
+      <h3>Contact</h3>
+      <p>If you'd like to connect, email me at <a id="email-link" href="mailto:shaikakramali29@gmail.com">shaikakramali29@gmail.com</a> or find me on LinkedIn / GitHub.</p>
+      <ul class="contact-list">
+        <li>Location: Hyderabad, India</li>
+        <li>Email: <a href="mailto:shaikakramali29@gmail.com">shaikakramali29@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/shaik-mohammed-akram-ali-22a16b2b0" target="_blank" rel="noopener">linkedin.com/in/shaik-mohammed-akram-ali-22a16b2b0</a></li>
+        <li>GitHub: <a href="https://github.com/SkAkramali" target="_blank" rel="noopener">github.com/SkAkramali</a></li>
+      </ul>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><span id="year"></span> SHAIK MOHAMMED AKRAM ALI</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
