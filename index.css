@@ -15,7 +15,7 @@ html, body{
   height: 100%;
   padding: 0.8rem;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Legacy header styles - now styled in styles.css with GraphQL theme */
@@ -50,7 +50,7 @@ html, body{
   color: #B4B4B4;
   font-size: 1rem;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .headerNavigations > a:hover{
