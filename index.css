@@ -1,58 +1,61 @@
+/* GraphQL-themed legacy styles - kept for backwards compatibility */
+/* Most styles moved to styles.css */
+
 html, body{
   height: 100%;
   width: 100%;
-  padding: 0px;
-  margin: 0px;
-  font:16px;
+  padding: 0;
+  margin: 0;
 }
 
+/* Legacy utility classes - updated to GraphQL theme */
 .cDpjEw {
-    font-size: 1rem;
-    width: 100%;
-    height: 100%;
-    padding: 0.8rem;
-    text-align: center;
-    transition: 0.9s;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* Legacy header styles - now styled in styles.css with GraphQL theme */
 .header{
   width: 100%;
-  /* height: 30px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top:0px;
-  left:0px;
-  background:#101825 ;
+  top: 0;
+  left: 0;
+  background: #1A1A1A;
+  border-bottom: 1px solid rgba(225, 0, 152, 0.1);
+  z-index: 100;
 }
 
 .logo{
-  color: #1973c8;
+  color: #E10098;
   padding-left: 10px;
+  font-weight: 600;
 }
 
 .headerNavigations{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:20px;
+  gap: 20px;
   padding-right: 10px;
 }
 
 .headerNavigations > a{
-  color: #c2c1c1;
-  font-size: 20px;
+  color: #B4B4B4;
+  font-size: 1rem;
   text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .headerNavigations > a:hover{
-  font-size: 1rem;
-  width: 100%;
-  height: 100%;
-  padding: 0.8rem;
-  text-align: center;
-  transition: 0.9s;
+  color: #E10098;
+  transform: translateY(-1px);
 }
 
 @media(max-width: 400px){
