@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
 </head>
 <body>
-<svg style="display: none;">
-    <!-- Add your icon definitions here -->
-    <symbol id="icon-home" viewBox="0 0 16 16"><path d="..."/></symbol>
-    <symbol id="icon-about" viewBox="0 0 16 16"><path d="..."/></symbol>
-    <!-- More icons... -->
-</svg>
-<nav>
-    <ul>
-        <li><a href="#"><svg><use href="#icon-home"></use></svg> Home</a></li>
-        <li><a href="#"><svg><use href="#icon-about"></use></svg> About</a></li>
-        <!-- More navigation items... -->
-    </ul>
-</nav>
-<section id="skills">
-    <ul>
-        <li><span class="icon"><svg><use href="#icon-skill1"></use></svg></span> Skill 1</li>
-        <li><span class="icon"><svg><use href="#icon-skill2"></use></svg></span> Skill 2</li>
-        <!-- More skills... -->
-    </ul>
-</section>
-<section id="contact">
-    <ul>
-        <li><span class="icon"><svg><use href="#icon-contact1"></use></svg></span> Contact Info 1</li>
-        <li><span class="icon"><svg><use href="#icon-contact2"></use></svg></span> Contact Info 2</li>
-        <!-- More contact items... -->
-    </ul>
-</section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! Here’s a brief introduction about me.</p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Overview of my professional experience.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Showcasing my projects.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>List of my skills.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can contact me via email or connect with me on social media.</p>
+        </section>
+    </main>
+    <footer>
+        <svg style="display: none;">
+            <symbol id="icon-example" viewBox="0 0 24 24"> <circle cx="12" cy="12" r="10" /></symbol>
+            <!-- Add more icons as needed -->
+        </svg>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
